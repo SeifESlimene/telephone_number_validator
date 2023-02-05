@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>US Program For Tourism</h1>
+    </header>
+    <p class="success">You are a registered US Tourist Now!</p>
+    <section>
+      <form onsubmit="return false">
+        <fieldset>
+          <legend>Tourism Form</legend>
+          <div class="form-control">
+            <label for="firstname">Enter your Firstname: </label
+            ><input
+              type="text"
+              id="firstname"
+              placeholder="Ex: John"
+              autocomplete="off"
+            />
+          </div>
+          <p class="error">Your Firstname should be not empty</p>
+          <div class="form-control">
+            <label for="lastname">Enter your Lastname:</label
+            ><input
+              type="text"
+              id="lastname"
+              placeholder="Ex: Doe"
+              autocomplete="off"
+            />
+          </div>
+          <p class="error">Your Lastname should be not empty</p>
+          <div class="form-control">
+            <label for="number">Enter your Number (US Only): </label>
+            <div>
+              <input
+                type="text"
+                id="number"
+                placeholder="Ex: (555) 555 5555"
+                autocomplete="off"
+              />
+              <p class="error">Your Telephone Number should not be empty</p>
+              <p class="error-number">Your Telephone Number format is wrong</p>
+            </div>
+          </div>
+          <div class="button">
+            <!-- <input type="button" value="Send" onclick="check()"></input> -->
+            <button onclick="check()">Send</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
